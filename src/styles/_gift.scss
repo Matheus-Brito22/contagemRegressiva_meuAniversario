@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.gift{
+    padding: 80px 0;
+
+    &__container{
+        text-align: center;
+
+        &__list{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width:667px) {
+              display: block;
+            }
+
+            &__item{
+                width: 240px;
+                height: 200px;
+                border: 2px solid variaveis.$cor001;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width:667px) {       
+                      width:100%;  
+                                 
+                  }
+
+                &:hover{
+                    background-color: variaveis.$cor001;
+                    color: variaveis.$corTexto;
+                    transition: ease 1s;
+                }
+            }
+        }
+    }
+}

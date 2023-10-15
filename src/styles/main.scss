@@ -1,0 +1,34 @@
+@use 'variaveis';
+@use 'reset';
+@use 'event';
+@use 'gift';
+@use 'timeline';
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title--small{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.button{
+    background-color: #000;
+    border-radius: 5px;
+    color: variaveis.$corTexto;
+    height: 40px;
+    width:  160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: initial;
+    cursor: pointer;
+}

@@ -1,0 +1,109 @@
+@use 'variaveis';
+
+.timeline{
+    text-align: justify;
+    
+    &__text{
+        max-width: 500px;
+        @media (max-width:667px) {       
+                width: 100%;
+        }
+       
+
+        h2{
+            border-bottom: 2px solid variaveis.$cor004;
+            margin-bottom: 20px;
+        }
+    }
+
+    
+    &__start{       
+        background-image: linear-gradient(to bottom, variaveis.$cor001, variaveis.$cor003);
+
+        .title{
+            text-align: center;
+            padding-top: 10px;
+        }
+    
+        &__container{
+        display: flex;
+        align-items: center;
+        }
+            img{
+                max-width: 340px;
+                margin-right: 40px;
+                }
+
+       
+    } 
+    @media (max-width:667px) {
+        &__start{
+            &__container{
+
+                display: block;
+                margin-left: 10px;
+                }
+                    img{
+                        max-width: 200px;
+                        
+                        }
+        }
+       
+    }   
+        
+     &__medium{
+            padding: 40px 0;
+            background-image: linear-gradient(to bottom, variaveis.$cor003, variaveis.$cor002);
+            
+            &__container{
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+
+                img{
+                    max-width: 340px;
+                    }
+                 }
+                
+            }
+   @media (max-width:667px) {
+        &__medium{
+           &__container{
+              display:block;
+              margin-left: 10px;        
+               }
+                img{
+                   max-width: 200px;
+                   
+           
+            }
+         }
+    }     
+     &__end{     
+        background-image: linear-gradient(to bottom, variaveis.$cor002, variaveis.$cor003 );
+
+        &__container{
+            display: flex;
+            align-items: center;
+
+            img{
+                max-width: 340px;
+                margin-right: 40px;
+          }
+        }                  
+    }   
+    
+    @media (max-width:667px) {
+        &__end{
+            
+           &__container{
+              display: block;
+              margin-left: 10px;
+              
+            }
+                img{
+                   max-width: 200px;
+            }
+         }
+    }     
+}
